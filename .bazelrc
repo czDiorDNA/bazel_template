@@ -1,0 +1,5 @@
+build --cxxopt='-std=c++11'
+
+build:linux_arm_on_linux --crosstool_top=//bazel/toolchain:custom_toolchain_suite
+build:linux_arm_on_linux --cpu=linux_arm_on_linux
+build:linux_arm_on_linux --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
